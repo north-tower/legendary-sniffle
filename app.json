@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "Giana's",
+    "slug": "gianas",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/1024.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/icon_adaptive_back.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon_adaptive_fore.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.northtower.giana"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f807dc6b-63da-4fb7-ad64-06b384e1a6d7"
+      }
+    },
+    "owner": "northtower"
+  }
+}

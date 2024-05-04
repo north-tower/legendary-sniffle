@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "Giana's",
+    "name": "Gilanis",
     "slug": "gianas",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -22,7 +22,7 @@
         "foregroundImage": "./assets/icon_adaptive_fore.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.northtower.giana"
+      "package": "com.northtower.gianas"
     },
     "web": {
       "favicon": "./assets/favicon.png"

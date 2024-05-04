@@ -16,7 +16,7 @@ const DeliveryScreen = () => {
     const resturant = useSelector(selectResturant);
 
   return (
-    <View style={tw`bg-green-400  flex-1`}> 
+    <View style={tw`bg-red-400  flex-1`}> 
         <SafeAreaView style={tw`z-50`}>
             <View style={tw`flex-row justify-between items-center p-5`}>
                 <TouchableOpacity onPress={() => navigation.navigate("Home")}>
@@ -39,9 +39,9 @@ const DeliveryScreen = () => {
                         style={tw`h-20 w-20`} />
                     </View>
 
-                    <Progress.Bar size={30} color="green" indeterminate={true} />
+                    <Progress.Bar size={30} color="#FF5733" indeterminate={true} />
                     <Text style={tw`mt-3 text-gray-500`}>
-        Your order at {resturant.title} is being prepared
+        Your order is being prepared
       </Text>
                 </View>
             

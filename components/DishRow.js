@@ -24,17 +24,17 @@ const DishRow = ( {id, name, description, price, image }) => {
     <>
      <TouchableOpacity
         onPress={() => setIsPressed(!isPressed)}
-        style={[tw`bg-white border p-4 border-gray-200`, isPressed && tw`border-b-0`]}
+        style={[tw`bg-black border p-4 border-gray-500`, isPressed && tw`border-b-0`]}
       >
         <View style={tw`flex-row`}>
           <View style={tw`flex-1 pr-2`}>
-            <Text style={tw`text-lg text-black mb-1`}>
+            <Text style={tw`text-lg text-red-500 mb-1`}>
                 {name}
             </Text>
             <Text style={tw`text-gray-400`}>
                 {description}
             </Text>
-            <Text style={tw`text-gray-400 mt-2`}>{price}</Text>
+            <Text style={tw`text-gray-400 mt-2`}>KES{price}</Text>
           </View>
         
         <View>
@@ -45,18 +45,18 @@ const DishRow = ( {id, name, description, price, image }) => {
       </TouchableOpacity>
 
       {isPressed &&(
-        <View style={tw`bg-white px-4`}>
+        <View style={tw`bg-black px-4`}>
           <View style={tw`flex-row items-center pb-3`}>
             <TouchableOpacity disabled={!items.length}
              onPress={removeItemFromBasket}>
-              <MinusCircleIcon color={items.length > 0 ? "#00CCBB" : "gray"}
+              <MinusCircleIcon color={items.length > 0 ? "#FF5733" : "gray"}
               size={40} />
             </TouchableOpacity>
 
             <Text style={tw`text-black`}>{items.length}</Text>
 
             <TouchableOpacity onPress={addItemToBasket}>
-              <PlusCircleIcon size={40} color={"#00ccbb"}/>
+              <PlusCircleIcon size={40} color={"#FF5733"}/>
             </TouchableOpacity>
           </View>
         </View>

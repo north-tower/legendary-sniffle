@@ -18,7 +18,7 @@ const PreparingOrderScreen = () => {
     }, []);
 
   return (
-    <SafeAreaView style={tw`flex-1 bg-green-400 justify-center items-center`}>
+    <SafeAreaView style={tw`flex-1 bg-red-400 justify-center items-center`}>
       <Animatable.Image
         source={require('../assets/gif.gif')}
         animation="slideInUp"

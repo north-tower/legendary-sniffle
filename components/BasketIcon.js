@@ -15,19 +15,19 @@ const BasketIcon = () => {
 
 
   return (
-    <View style={tw`absolute bottom-10 w-full z-50`}>
+    <View style={tw`absolute bottom-10 w-full z-50 `}>
        <TouchableOpacity onPress={() => navigation.navigate("Basket")}
   style={[
     tw`mx-5 p-4 rounded-lg flex-row items-center `,
-    { backgroundColor: '#00CCBB' }
+    { backgroundColor: '#FF5733' }
   ]}
 >
             <Text 
             style={[tw`text-white font-extrabold text-lg py-1 px-2`,{ backgroundColor: 
-            '#01A296' }] }>{items.length}</Text>
+            '#FF5733' }] }>{items.length}</Text>
             <Text style={tw`flex-1 text-white font-extrabold text-lg text-center`}>View Basket</Text>
             <Text style={tw`text-lg text-white font-extrabold`}>
-                ${basketTotal}
+                KES{basketTotal}
             </Text>
 
         </TouchableOpacity>

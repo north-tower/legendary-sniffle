@@ -48,23 +48,23 @@ const HomeScreen = () => {
 
     
   return (
-    <SafeAreaView style={tw`bg-white h-full pt-5`}>
+    <SafeAreaView style={tw`bg-black h-full pt-5`}>
      <View style={tw`flex-row pb-3 items-center mx-4  `}>
         <Image 
         source={{
-            uri: "https:links.papareact.com/wru/"
+            uri: "https://i.postimg.cc/GTbbvMLn/Restaurant-HD-Logo-1-1280x687-1.png"
         }}
         style={tw`h-7 w-7 bg-gray-500 p-4 rounded-full`}
         />
         <View style={tw`flex-1`}>
-            <Text style={tw`font-bold text-gray-300 text-xs`}>
+            <Text style={tw`font-bold text-red-500 text-xs`}>
                 Deliver Now!
             </Text>
-            <Text style={tw`font-bold text-gray-300  text-xl`}>Current Location
-                <ChevronDownIcon  color="#00CCBB" />
+            <Text style={tw`font-bold text-red-500 text-xl`}>Current Location
+                <ChevronDownIcon  color="#FF5733" />
             </Text>
         </View>
-        <UserIcon  color="#00CCBB" />
+        <UserIcon  color="#FF5733" />
      </View>
         <View style={tw`flex-row items-center pb-2 mx-4`}>
             <View style={tw`flex-row flex-1 bg-gray-200 p-3 rounded-full `}>
@@ -72,10 +72,10 @@ const HomeScreen = () => {
                 <TextInput placeholder='Resturants and Cuisines' />
             </View>
 
-            <AdjustmentsHorizontalIcon  color="#00CCBB" />
+            <AdjustmentsHorizontalIcon color="#FF5733" />
         </View>
 
-        <ScrollView style={tw`bg-gray-100`} contentContainerStyle={{ paddingBottom: 100,}}>
+        <ScrollView style={tw`bg-black`} contentContainerStyle={{ paddingBottom: 100,}}>
             <Categories />
 
             {/* {featuredCategories?.map(category => {
@@ -84,15 +84,15 @@ const HomeScreen = () => {
                 />
             })} */}
 
-            <FeaturedRow title="Featured" description="Paid placements from our partners"
+            <FeaturedRow title="Deal of the Day" description="Get the Latest"
             id="1" />
 
             
-            <FeaturedRow2 title="Tasty Discounts" 
-            description="Everyone's been enjoying these juicy discounts"
+            <FeaturedRow2 title="Cafe" 
+            description="For decades, we have remained the quintessential cafeteria-style eatery, a beloved meeting point for Nakuru’s residents. Join your friends for a quick chai and a chat, as our restaurant buzzes with lively activity, perfectly capturing the town’s spirit. Our extensive yet simple menu, prepared with a tasteful touch, and served in generous portions, keeps our loyal customers coming back for more.  Restaurant, a timeless staple in Nakuru."
             id="2" />
             
-            <FeaturedRow3 title="Offers near you"
+            <FeaturedRow3 title="Fine Dining"
              description="Why not support local resturants tonight!"
             id="3" />
 
